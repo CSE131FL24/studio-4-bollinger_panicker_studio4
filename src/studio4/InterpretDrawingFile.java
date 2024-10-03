@@ -29,12 +29,11 @@ public class InterpretDrawingFile {
 		double doubleY = in.nextDouble(); 
 		double halfWidth = in.nextDouble();
 		double halfHeight = in.nextDouble();
-		//int greenComponent = in.nextInt();
-		//int blueComponent = in.nextInt();
+
 
 		StdDraw.setPenColor(redComp, greenComp, blueComp);
 
-		if (shape == "rectangle") {
+		if (shape.equals("rectangle")) {
 			if (filled) {
 				StdDraw.filledRectangle(doubleX,doubleY,halfWidth,halfHeight);
 			}
